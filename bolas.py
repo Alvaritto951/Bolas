@@ -47,13 +47,13 @@ while not game_over:
         if evento.type == pg.QUIT:
             game_over = True
         
-    
+#Color del fondo de pantalla y las bolas se mueven dentro de la pantalla    
     pantalla_principal.fill((0, 125, 255))
     bola.mover(800, 600)
     bola2.mover(800, 600)
     bola3.mover(800, 600)
 
-    
+#Imprime las bolas en la pantalla y su movimiento    
     pg.draw.rect(pantalla_principal, bola.color, (bola.x, bola.y, bola.w, bola.h))
     pg.draw.rect(pantalla_principal, bola2.color, (bola2.x, bola2.y, bola2.w, bola2.h))
     pg.draw.rect(pantalla_principal, bola3.color, (bola3.x, bola3.y, bola3.w, bola3.h))
